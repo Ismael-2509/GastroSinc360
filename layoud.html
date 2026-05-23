@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GastroSync 360 | Sincronización Total mesa-cocina</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0b0f19;
+            color: #f8fafc;
+        }
+
+        .glow-accent {
+            box-shadow: 0 0 20px rgba(249, 115, 22, 0.3);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .text-gradient {
+            background: linear-gradient(to right, #f97316, #fb923c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .bg-mesh {
+            background-image: radial-gradient(at 0% 0%, rgba(249, 115, 22, 0.15) 0, transparent 40%),
+                              radial-gradient(at 100% 100%, rgba(30, 41, 59, 0.4) 0, transparent 40%);
+        }
+    </style>
+</head>
+<body class="bg-mesh min-h-screen selection:bg-orange-500/30">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 top-0 border-b border-white/5 bg-[#0b0f19]/80 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-orange-500 rounded-xl flex items-center justify-center font-bold text-white shadow-lg shadow-orange-500/20">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                </div>
+                <span class="text-xl font-extrabold tracking-tight">GastroSync <span class="text-orange-500">360</span></span>
+            </div>
+            
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSemg21UDGUw9XN0o6Ue1KPDJ4esS4CNOiJOX-Z_qVfMs8f4_A/viewform?usp=publish-editor" 
+               target="_blank" 
+               class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2.5 rounded-full font-bold text-sm transition-all duration-300 glow-accent transform hover:scale-105 active:scale-95">
+                Agendar Demo
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-44 pb-20 px-6 overflow-hidden">
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <span class="inline-block py-1 px-4 rounded-full bg-orange-500/10 border border-orange-500/20 text-orange-500 text-xs font-bold uppercase tracking-widest mb-6">
+                Tecnología Instantánea para Restaurantes
+            </span>
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-8 tracking-tight leading-[1.1]">
+                De la mesa a la cocina en <br>
+                <span class="text-gradient">un segundo, sin cuellos de botella.</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed">
+                El mesero toma el pedido desde su dispositivo y la cocina lo recibe al instante. Sin gritos, sin papeles perdidos y sin esperas innecesarias.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSemg21UDGUw9XN0o6Ue1KPDJ4esS4CNOiJOX-Z_qVfMs8f4_A/viewform?usp=publish-editor" 
+                   target="_blank" 
+                   class="w-full sm:w-auto bg-white text-black hover:bg-orange-500 hover:text-white px-10 py-4 rounded-2xl font-extrabold text-lg transition-all duration-300 transform hover:-translate-y-1">
+                    Comenzar Ahora
+                </a>
+                <p class="text-slate-500 text-sm flex items-center gap-2">
+                    <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                    Prueba gratuita disponible
+                </p>
+            </div>
+        </div>
+        
+        <!-- Background element -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-orange-500/5 blur-[120px] rounded-full -z-0"></div>
+    </section>
+
+    <!-- Problema vs Solución -->
+    <section class="py-24 px-6 bg-[#080b12]/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-stretch">
+                <!-- Problema -->
+                <div class="glass-card p-10 rounded-[2.5rem] border-red-500/20">
+                    <div class="w-12 h-12 bg-red-500/10 rounded-full flex items-center justify-center mb-6 text-red-500">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                    </div>
+                    <h3 class="text-3xl font-bold text-white mb-6 leading-tight">El caos en <br>horas pico</h3>
+                    <ul class="space-y-4 text-slate-400">
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-500 mt-1">•</span>
+                            Meseros corriendo con comandas de papel.
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-500 mt-1">•</span>
+                            Errores en cocina por tickets ilegibles.
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-500 mt-1">•</span>
+                            Clientes frustrados por largas esperas.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Solución -->
+                <div class="glass-card p-10 rounded-[2.5rem] border-orange-500/30 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-8 opacity-10">
+                        <svg class="w-32 h-32 text-orange-500" fill="currentColor" viewBox="0 0 20 20"><path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1h4v1a2 2 0 11-4 0zM12 14c.015-.34.208-.646.477-.859a4 4 0 10-4.954 0c.27.213.462.519.477.859h4z"></path></svg>
+                    </div>
+                    <div class="w-12 h-12 bg-orange-500/10 rounded-full flex items-center justify-center mb-6 text-orange-500">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    </div>
+                    <h3 class="text-3xl font-bold text-white mb-6 leading-tight">La fluidez de <br>GastroSync 360</h3>
+                    <ul class="space-y-4 text-slate-200">
+                        <li class="flex items-start gap-3">
+                            <span class="text-orange-500 mt-1">•</span>
+                            Comandas digitales enviadas en milisegundos.
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-orange-500 mt-1">•</span>
+                            Flujo continuo sin acumulaciones de órdenes.
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-orange-500 mt-1">•</span>
+                            Cocina perfectamente sincronizada y en calma.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beneficios Grid -->
+    <section class="py-24 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl font-extrabold text-white mb-4 tracking-tight">Diseñado para la eficiencia operativa</h2>
+                <p class="text-slate-400">Todo lo que necesitas para que tu servicio no se detenga nunca.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Beneficio 1 -->
+                <div class="glass-card p-10 rounded-3xl hover:bg-white/5 transition-all duration-500 group">
+                    <div class="w-14 h-14 bg-orange-500/10 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-4">Cero Cuellos de Botella</h4>
+                    <p class="text-slate-400 leading-relaxed text-sm">
+                        Elimina la fila de meseros en el punto de entrega. El flujo de órdenes es constante, evitando acumulaciones críticas en cocina.
+                    </p>
+                </div>
+
+                <!-- Beneficio 2 -->
+                <div class="glass-card p-10 rounded-3xl hover:bg-white/5 transition-all duration-500 group">
+                    <div class="w-14 h-14 bg-orange-500/10 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-4">Pedidos al Instante</h4>
+                    <p class="text-slate-400 leading-relaxed text-sm">
+                        El mesero toma la orden desde el móvil y, antes de que guarde el equipo, la cocina ya está preparando el plato en pantalla.
+                    </p>
+                </div>
+
+                <!-- Beneficio 3 -->
+                <div class="glass-card p-10 rounded-3xl hover:bg-white/5 transition-all duration-500 group">
+                    <div class="w-14 h-14 bg-orange-500/10 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-4">Clientes más Felices</h4>
+                    <p class="text-slate-400 leading-relaxed text-sm">
+                        Reduce los tiempos de espera hasta en un 40%. Clientes satisfechos significan mayor rotación de mesas y mejores propinas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-24 px-6 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto glass-card rounded-[3rem] p-12 md:p-20 text-center border-orange-500/20 relative z-10">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6 tracking-tight">¿Listo para transformar tu servicio?</h2>
+            <p class="text-slate-400 text-lg mb-12 max-w-xl mx-auto">
+                No dejes que otro fin de semana el caos tome el control. Únete a la revolución de GastroSync 360 hoy mismo.
+            </p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSemg21UDGUw9XN0o6Ue1KPDJ4esS4CNOiJOX-Z_qVfMs8f4_A/viewform?usp=publish-editor" 
+               target="_blank" 
+               class="bg-orange-500 hover:bg-orange-600 text-white px-12 py-5 rounded-2xl font-extrabold text-xl transition-all duration-300 glow-accent inline-block transform hover:scale-105">
+                Solicitar Auditoría Operativa Gratis
+            </a>
+        </div>
+        <!-- Decorative blob -->
+        <div class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-orange-500/10 blur-[120px] rounded-full translate-y-1/2 translate-x-1/4"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-white/5 bg-[#080b12]">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-2">
+                <span class="text-lg font-bold text-white">GastroSync <span class="text-orange-500">360</span></span>
+            </div>
+            <p class="text-slate-500 text-sm text-center">
+                &copy; 2024 GastroSync 360. Todos los derechos reservados. <br class="md:hidden"> Optimización tecnológica para el sector gastronómico.
+            </p>
+            <div class="flex gap-6">
+                <a href="#" class="text-slate-500 hover:text-white transition-colors text-sm">Privacidad</a>
+                <a href="#" class="text-slate-500 hover:text-white transition-colors text-sm">Términos</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
